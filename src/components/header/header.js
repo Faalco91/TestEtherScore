@@ -1,8 +1,15 @@
 'use client'
 /* eslint-disable @next/next/no-img-element */
 import styles from "./header.module.css";
+import React from "react";
+import { useWallet } from "../contexts/walletContext";
+
 
 export default function Header() {
+
+    const { handleConnectWallet } = useWallet(); // Utiliser la fonction du contexte
+    
+
     return (
         <section className={styles.headerSection}>
             <div className={styles.logo}>
@@ -18,7 +25,7 @@ export default function Header() {
             </nav>
             <div className={styles.navBarOptions}>
                 <div className={styles.connectBtn}>
-                    <a>Connectez-vous</a>
+                    <a onClick={handleConnectWallet}>Connectez-vous</a>
                 </div>
                 <div className={styles.languageBtn}>
                     <btn>FR</btn>
