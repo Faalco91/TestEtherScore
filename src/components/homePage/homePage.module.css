@@ -1,0 +1,32 @@
+.mainSection {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    padding: 4rem 0;
+}
+.mainContainer {
+    display: flex;
+}
+.mainContainer > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 80%;
+}
+.mainContainer > article > h1 {
+    font-weight:bolder;
+    font-size: 3rem;
+    padding: 1.25rem 0;
+    line-height: 1.2;
+}
+.mainContainer > article > p {
+    margin-bottom: 1.5rem;
+}
+.imageContainer {
+    width: 100%;
+}
+.imageContainer > img {
+    width: 100%;
+    height: auto;
+}

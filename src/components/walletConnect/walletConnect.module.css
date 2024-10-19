@@ -1,15 +1,13 @@
 .btnConnect{
-    margin-top: 2rem;
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-    border-radius: 10px;
+    font-size: 1.125rem;
+    padding: 12px 55px;
+    opacity: 1;
+    background: rgb(3, 125, 214);
+    color: rgb(255, 255, 255);
+    border-radius: 2rem;
     border: none;
-    cursor: pointer;
-    background-color: #f6851b;
     margin: 0;
-}
-.connection {
-    text-align: center;
+    cursor: pointer;
 }
 .connection > h1 {
     padding-bottom: 2rem;

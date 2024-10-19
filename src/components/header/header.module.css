@@ -1,0 +1,44 @@
+.headerSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+}
+.navBarContainer {
+    display: flex;
+    align-items: center;
+}
+.navBar ul {
+    display: flex;
+}
+.navBar li {
+    padding: 0 1rem;
+    margin: 0;
+}
+.navBar li > a:hover {
+    cursor: pointer;
+}
+.navBar li > a {
+    font-weight: 500 !important;
+}
+.navBarOptions {
+    display: flex;
+    align-items: center;
+
+}
+.connectBtn {
+    padding: 8px 32px;
+    opacity: 1;
+    background: rgb(3, 125, 214);
+    color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    align-items: center;
+    cursor: pointer;
+}
+.languageBtn {
+    margin-left: 32px;
+}
