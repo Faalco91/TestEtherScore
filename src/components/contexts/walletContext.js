@@ -15,8 +15,12 @@ export const WalletProvider = ({ children }) => {
     }
   };
 
+  const handleDisconnectWallet = () => {
+    setWalletAddress(null);
+  };  
+
   return (
-    <WalletContext.Provider value={{ walletAddress, handleConnectWallet }}>
+    <WalletContext.Provider value={{ walletAddress, handleConnectWallet, handleDisconnectWallet }}>
       {children}
     </WalletContext.Provider>
   );
