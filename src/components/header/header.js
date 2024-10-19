@@ -7,7 +7,7 @@ import { useWallet } from "../contexts/walletContext";
 
 export default function Header() {
 
-    const { handleConnectWallet } = useWallet(); // Utiliser la fonction du contexte
+    const { handleConnectWallet, handleDisconnectWallet, walletAddress } = useWallet(); 
     
 
     return (
@@ -25,7 +25,12 @@ export default function Header() {
             </nav>
             <div className={styles.navBarOptions}>
                 <div className={styles.connectBtn}>
-                    <a onClick={handleConnectWallet}>Connectez-vous</a>
+                    {walletAddress ? (
+                        <a onClick={handleDisconnectWallet}>Déconnectez-vous</a>
+
+                    ):(
+                        <a onClick={handleConnectWallet}>Connectez-vous</a>
+                    )}
                 </div>
                 <div className={styles.languageBtn}>
                     <btn>FR</btn>
