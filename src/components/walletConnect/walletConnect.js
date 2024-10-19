@@ -15,14 +15,13 @@ const WalletConnection = () => {
 
   return (
     <div className={styles.connection}>
-      <h1>Connectez-vous avec Metamask !</h1>
       {walletAddress ? (
         <div>
           <p>Vous êtes bien connecté au wallet {walletAddress}</p>
         </div>
       ) : (
         <button className={styles.btnConnect} onClick={handleConnectWallet}>
-          Connexion au Wallet
+          Consultez votre wallet
         </button>
       )}
     </div>
