@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { WalletProvider } from "@/components/contexts/walletContext";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -21,7 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <WalletProvider>
           {children}
+        </WalletProvider>
       </body>
     </html>
   );
