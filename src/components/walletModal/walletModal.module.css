@@ -1,0 +1,31 @@
+/* walletModal.module.css */
+.modalContainer {
+    position: absolute;
+    top: 20%;
+    display: flex;
+}
+.modalBackdrop {
+    backdrop-filter: blur(10px); /* Appliquer un flou d'arrière-plan */
+    background-color: rgba(255, 255, 255, 0); /* Couleur de fond avec transparence */
+  }
+  
+  .modalContent {
+    border-radius: 1rem; /* Arrondi des coins */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    padding: 1.5rem; /* Espacement interne */
+    
+  }
+  
+  .modalHeader {
+    margin-bottom: 1rem; /* Espacement sous le header */
+  }
+  
+  .modalBody {
+    margin-bottom: 1rem; /* Espacement sous le corps du modal */
+  }
+  
+  .modalFooter {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les boutons */
+  }
+  
