@@ -3,20 +3,38 @@ import React, { useState } from 'react';
 import { useWallet } from '../contexts/walletContext';
 import styles from './walletConnect.module.css'
 
+import WalletModal from '../walletModal/walletModal';
+
 const WalletConnection = () => {
 
-  const {walletAddress, handleConnectWallet} = useWallet();
+  const {walletAddress, walletBalance ,handleConnectWallet} = useWallet();
+
+    // Crée un état pour gérer l'ouverture/fermeture de la modal
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    // Fonction pour ouvrir la modal
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    // Fonction pour fermer la modal
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
 
   return (
     <div className={styles.connection}>
       {walletAddress ? (
         <div>
-          <p>Vous êtes bien connecté au wallet {walletAddress}</p>
+          <a className={styles.btnConnect} onClick={handleOpenModal}>Consulter mon Wallet</a>
+          <p className={styles.walletAddress}>Vous êtes bien connecté au wallet {walletAddress} pour un solde de : {walletBalance} ETH.</p>
+          {isModalOpen && <WalletModal isOpen={isModalOpen} onClose={handleCloseModal} />}
+
         </div>
       ) : (
-        <button className={styles.btnConnect} onClick={handleConnectWallet}>
-          Consultez votre wallet
-        </button>
+        <a className={styles.btnConnect} onClick={handleConnectWallet}>
+          Me connecter à mon wallet
+        </a>
       )}
     </div>
   );

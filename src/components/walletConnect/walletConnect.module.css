@@ -9,6 +9,9 @@
     margin: 0;
     cursor: pointer;
 }
+.walletAddress {
+    margin-top: 2rem;
+}
 .connection > h1 {
     padding-bottom: 2rem;
 }
