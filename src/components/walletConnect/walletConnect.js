@@ -27,9 +27,7 @@ const WalletConnection = () => {
       {walletAddress ? (
         <div>
           <a className={styles.btnConnect} onClick={handleOpenModal}>Consulter mon Wallet</a>
-          <p className={styles.walletAddress}>Vous êtes bien connecté au wallet {walletAddress} pour un solde de : {walletBalance} ETH.</p>
           {isModalOpen && <WalletModal isOpen={isModalOpen} onClose={handleCloseModal} />}
-
         </div>
       ) : (
         <a className={styles.btnConnect} onClick={handleConnectWallet}>
