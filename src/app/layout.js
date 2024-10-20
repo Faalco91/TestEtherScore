@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
+import { NextUIProvider } from "@nextui-org/react";
 import { WalletProvider } from "@/components/contexts/walletContext";
+import { Providers } from "./providers";
 import "./globals.css";
-
-import {NextUIProvider} from "@nextui-org/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,14 +21,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Providers>
         <NextUIProvider>
           <WalletProvider>
               {children}
           </WalletProvider>
         </NextUIProvider>
+        </Providers>
 
       </body>
     </html>
