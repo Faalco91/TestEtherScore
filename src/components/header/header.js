@@ -3,7 +3,7 @@
 import styles from "./header.module.css";
 import React from "react";
 import { useWallet } from "../contexts/walletContext";
-
+import Switcher from "../themeSwitcher/themeSwitcher";
 
 export default function Header() {
 
@@ -24,16 +24,19 @@ export default function Header() {
                 </ul>
             </nav>
             <div className={styles.navBarOptions}>
-                <div className={styles.connectBtn}>
-                    {walletAddress ? (
-                        <a onClick={handleDisconnectWallet}>Déconnectez-vous</a>
-
-                    ):(
-                        <a onClick={handleConnectWallet}>Connectez-vous</a>
-                    )}
-                </div>
                 <div className={styles.languageBtn}>
                     <btn>FR</btn>
+                </div>
+                <div className={styles.connectBtn}>
+                    {walletAddress ? (
+                        <a onClick={handleDisconnectWallet}>Déconnexion</a>
+
+                    ):(
+                        <a onClick={handleConnectWallet}>Connexion</a>
+                    )}
+                </div>
+                <div>
+                    <Switcher />
                 </div>
             </div>
             </div>
