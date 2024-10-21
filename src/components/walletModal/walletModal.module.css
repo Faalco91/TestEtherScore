@@ -4,6 +4,24 @@
     align-items: center;
   }
   .ethBalance > p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
     padding-right: 1rem;
+  }
+  .modalHeader {
+    padding: 3rem 0 0rem 0;
+  }
+  .modalHeader > h2 {
+    font-size: 1.125rem;
+    color: grey;
+    font-weight: 400;
+  }
+
+  .transactionSection {
+    padding: 2.5rem 1rem 2rem 1rem;
+  }
+  .transactionSection > h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 1rem
   }

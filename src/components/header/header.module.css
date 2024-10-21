@@ -18,9 +18,11 @@
 .navBar li {
     padding: 0 1rem;
     margin: 0;
+    transition: transform .3s ease;
 }
 .navBar li > a:hover {
     cursor: pointer;
+    transform: scale(1.05) translateY(-2px);
 }
 .navBar li > a {
     font-weight: 500 !important;
@@ -31,14 +33,16 @@
 
 }
 .connectBtn {
+    box-shadow: .0625rem .25rem .625rem rgba(0, 0, 0, .125);
     padding: 8px 32px;
     opacity: 1;
-    background: rgb(3, 125, 214);
+    background: rgb(86,58,133);
+    background: linear-gradient(90deg, rgba(86,58,133,1) 0%, rgba(55,200,223,1) 100%);
     color: rgb(255, 255, 255);
     border-radius: 2rem;
     align-items: center;
     cursor: pointer;
+    margin-right: 1.5rem;
 }
 .languageBtn {
-    margin-left: 32px;
 }

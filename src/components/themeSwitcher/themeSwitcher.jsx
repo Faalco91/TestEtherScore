@@ -27,8 +27,8 @@ const Switcher = () => {
   return (
     <Switch
       defaultSelected={theme === "light"}
-      size="lg"
-      color="secondary"
+      size="md"
+      color="primary"
       onChange={(e) => handleSwitch(e.target.checked)}
       thumbIcon={({ isSelected, className }) =>
         isSelected ? <SunIcon className={className} /> : <MoonIcon className={className} />
