@@ -1,0 +1,12 @@
+{
+    "connection": "Connection",
+    "disconnection": "Disconnection",
+    "title": "Manage your Crypto Wallet",
+    "intro": "Connect to MetaMask with EtherWallet v1 to easily manage your Ethereum wallet. Track your last 10 transactions, check your balance, and new features are coming soon for an even better experience.",
+    "cta1": "Connect to my wallet",
+    "cta2": "Consult my Wallet",
+    "balance": "Wallet balance",
+    "transaction": "Latest transactions",
+    "error1": "Error: Please try again later",
+    "error2": "You have not made any transactions."
+}

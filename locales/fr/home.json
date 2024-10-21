@@ -1,0 +1,12 @@
+{
+"connection":"Connexion",
+"disconnection":"Déconnexion",
+"title":"Gérez votre portefeuille de cryptomonnaies",
+"intro":"Connectez-vous à MetaMask avec EtherWallet v1 pour gérer facilement votre portefeuille Ethereum. Suivez vos 10 dernières transactions, vérifiez votre solde, et de nouvelles fonctionnalités sont à venir pour une expérience encore meilleure.",
+"cta1":"Connecter mon wallet",
+"cta2":"Consulter mon wallet",
+"balance":"Solde du wallet",
+"transaction":"Dernières transactions",
+"error1":"Erreur : Veuillez réessayer plus tard.",
+"error2":"Vous n'avez effectué aucune transaction."
+}
