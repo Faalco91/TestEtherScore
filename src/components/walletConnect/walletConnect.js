@@ -2,12 +2,14 @@
 import React, { useState } from 'react';
 import { useWallet } from '../contexts/walletContext';
 import styles from './walletConnect.module.css'
-
 import WalletModal from '../walletModal/walletModal';
+import { useTranslation } from 'react-i18next';
 
 const WalletConnection = () => {
 
-  const {walletAddress, walletBalance ,handleConnectWallet} = useWallet();
+  const { t } = useTranslation();
+
+  const {walletAddress, handleConnectWallet} = useWallet();
 
     // Crée un état pour gérer l'ouverture/fermeture de la modal
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,13 +28,15 @@ const WalletConnection = () => {
     <div className={styles.connection}>
       {walletAddress ? (
         <div>
-          <a className={styles.btnConnect} onClick={handleOpenModal}>Consulter mon Wallet</a>
+          <a className={styles.btnConnect} onClick={handleOpenModal}>{t('cta2')}</a>
           {isModalOpen && <WalletModal isOpen={isModalOpen} onClose={handleCloseModal} />}
         </div>
       ) : (
-        <a className={styles.btnConnect} onClick={handleConnectWallet}>
-          Me connecter à mon wallet
-        </a>
+        <div>
+          <a className={styles.btnConnect} onClick={handleConnectWallet}>
+          {t('cta1')}
+          </a>
+        </div>
       )}
     </div>
   );
