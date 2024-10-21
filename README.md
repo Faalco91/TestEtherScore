@@ -1,18 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EtherScore
 
-## Getting Started
+## Description
+EtherScore est un mini site web conçu pour afficher le solde en ETH du portefeuille de cryptomonnaies de l'utilisateur. Ce projet a été réalisé dans le cadre d'une évaluation technique pour le poste de **Frontend Developer (Web3)**. L'application permet aux utilisateurs de se connecter facilement à leur portefeuille via l'extension Metamask et offre une expérience personnalisable grâce à la prise en charge de plusieurs langues et d'un mode sombre.
 
-First, run the development server:
+## Table des Matières
+- [Fonctionnalités](#fonctionnalités)
+- [Technologies Utilisées](#technologies-utilisées)
+- [Installation](#installation)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Fonctionnalités
+- **Connexion via Metamask** : Les utilisateurs peuvent se connecter à leur portefeuille de cryptomonnaies en utilisant l'extension Metamask.
+- **Affichage du solde en ETH** : Une fois connecté, le solde en ETH du portefeuille est affiché sur l'interface.
+- **Personnalisation de l'interface** :
+  - Changement de langue pour une meilleure accessibilité.
+  - Mode sombre pour une expérience visuelle améliorée.
+- **Déconnexion** : Un bouton de déconnexion est disponible une fois que l'utilisateur est connecté.
+- **Transactions récentes** (optionnel) : Affichage des 10 dernières transactions avec des détails pertinents tels que le statut, la date, l'émetteur, et le destinataire, avec un lien vers Etherscan.
+
+## Technologies Utilisées
+- **Frontend** : React.js
+- **Bibliothèque de blockchain** : ethers.js
+- **Traduction** : i18next
+- **Composants UI** : NextUI
+- **Stylisation** : TailwindCSS
+
+## Installation
+Pour installer EtherScore, suivez les étapes ci-dessous :
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/username/etherscore.git
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
