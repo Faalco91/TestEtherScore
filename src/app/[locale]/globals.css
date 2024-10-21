@@ -6,12 +6,12 @@
 
 
 html.light {
-  --background-color: white;
+  --background-color: #fef9ef;
   --text-color: black;
 }
 
 html.dark {
-  --background-color: black;
+  --background-color: #141414;  ;
   --text-color: white;
 }
  
