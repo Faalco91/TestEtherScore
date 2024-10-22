@@ -1,7 +1,7 @@
-# EtherScore
+# Etherwallet - Test Technique Etherscore
 
 ## Description
-EtherScore is a mini website designed to display the ETH balance of the user's cryptocurrency portfolio. This project was carried out as part of a technical evaluation for the position of **Frontend Developer (Web3)**. The application allows users to easily connect to their wallet via the Metamask extension and offers a customisable experience with support for multiple languages and a dark mode.
+Etherwallet is a mini website designed to display the ETH balance of the user's cryptocurrency portfolio. This project was carried out as part of a technical evaluation for the position of **Frontend Developer (Web3)**. The application allows users to easily connect to their wallet via the Metamask extension and offers a customisable experience with support for multiple languages and a dark mode.
 
 ## Table of contents
 - Features](#features)
